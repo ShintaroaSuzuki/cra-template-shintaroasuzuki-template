@@ -1,8 +1,6 @@
 module.exports = {
-    globals: {
-        'ts-jest': {
-            useESM: true
-        }
+    transform: {
+        '^.+\\.ts[x]?$': 'ts-jest'
     },
     moduleNameMapper: {
         '#(.*)': '<rootDir>/node_modules/$1',
