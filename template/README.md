@@ -14,5 +14,6 @@ $ git submodule add ../server-repogitory server
 
 ```
 $ yarn hygen new components
+$ yarn hygen new pages
 $ yarn hygen new utils
 ```
