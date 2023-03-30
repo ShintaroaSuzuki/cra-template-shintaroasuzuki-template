@@ -5,7 +5,7 @@
 ### サブモジュールの作成
 
 ```
-$ git submodule add ../server-repogitory server
+$ git submodule update --init --recursive
 ```
 
 ## Scripts
