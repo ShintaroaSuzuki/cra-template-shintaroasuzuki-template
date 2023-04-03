@@ -1,4 +1,4 @@
-const { ESLint } = require('eslint');
+const { ESLint } = require("eslint");
 
 const removeIgnoredFiles = async (files) => {
     const eslint = new ESLint();
@@ -8,18 +8,18 @@ const removeIgnoredFiles = async (files) => {
         })
     );
     const filteredFiles = files.filter((_, i) => !isIgnored[i]);
-    return filteredFiles.join(' ');
+    return filteredFiles.join(" ");
 };
 
 module.exports = {
-    'src/**/*.{ts,tsx,js,jsx}': async (files) => {
+    "src/**/*.{ts,tsx,js,jsx}": async (files) => {
         const filesToLint = await removeIgnoredFiles(files);
         if (filesToLint.length === 0) {
             return [];
         }
         return [
-            `prettier --write ${filesToLint}`,
-            `eslint --fix --max-warnings=0 ${filesToLint}`
+            `prettier --write ${filesToLint} --config prettierrc.js`,
+            `eslint --fix --max-warnings=0 ${filesToLint}`,
         ];
-    }
+    },
 };
