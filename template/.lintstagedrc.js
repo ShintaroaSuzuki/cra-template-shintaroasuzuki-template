@@ -18,7 +18,7 @@ module.exports = {
             return [];
         }
         return [
-            `prettier --write ${filesToLint} --config prettierrc.js`,
+            `prettier --write ${filesToLint} --config .prettierrc.js`,
             `eslint --fix --max-warnings=0 ${filesToLint}`,
         ];
     },
