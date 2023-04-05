@@ -1,6 +1,6 @@
 {
     "name": "cra-template-shintaroasuzuki-template",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "keywords": ["react", "create-react-app", "template"],
     "description": "個人的な React テンプレート",
     "repository": {
