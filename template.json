@@ -64,7 +64,6 @@
                 "@typescript-eslint/no-unused-vars": "error",
                 "@typescript-eslint/ban-types": "error",
                 "max-params": ["error", 3],
-                "react-native/no-raw-text": "off",
                 "tailwind/class-order": "off"
             },
             "ignorePatterns": ["src/apis/bin"]
@@ -90,7 +89,8 @@
             "@types/node": "^16.7.13",
             "@types/react": "^18.0.0",
             "@types/react-dom": "^18.0.0",
-            "axios": "^1.3.4",
+            "aspida": "^1.11.0",
+            "axios": "^0.27.2",
             "clsx": "^1.2.1",
             "react": "^18.2.0",
             "react-dom": "^18.2.0",
