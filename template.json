@@ -64,7 +64,19 @@
                 "@typescript-eslint/no-unused-vars": "error",
                 "@typescript-eslint/ban-types": "error",
                 "max-params": ["error", 3],
-                "tailwind/class-order": "off"
+                "tailwind/class-order": "off",
+                "@typescript-eslint/no-restricted-imports": [
+                    "error",
+                    {
+                        "paths": [
+                            {
+                                "name": "react",
+                                "message": "Please import ComponentPropsWithoutRef / ComponentPropsWithRef from react instead",
+                                "importNames": ["ComponentProps"]
+                            }
+                        ]
+                    }
+                ]
             },
             "ignorePatterns": ["src/apis/bin"]
         },
