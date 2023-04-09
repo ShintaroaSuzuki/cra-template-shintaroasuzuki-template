@@ -1,5 +1,5 @@
 [submodule "server"]
     path = server
     url = ../server-repository.git
-    branch = master
+    branch = main
 
